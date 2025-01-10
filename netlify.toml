@@ -1,0 +1,11 @@
+[build]
+functions = "./netlify/functions"
+
+
+[[edge_functions]]
+  function = "redirect"
+  path = "/*"
+
+[[edge_functions]]
+  function = "upload"
+  path = "/upload"
